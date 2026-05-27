@@ -105,7 +105,9 @@ def environment_info():
 from users import router as users_router
 from predict import router as predict_router
 from pokemon import router as pokemon_router
+from crypto import router as crypto_router
 
 app.include_router(users_router)
 app.include_router(predict_router)
 app.include_router(pokemon_router)
+app.include_router(crypto_router)
