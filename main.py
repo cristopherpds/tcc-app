@@ -103,5 +103,7 @@ def environment_info():
     }
 
 from users import router as users_router
+from predict import router as predict_router
 
 app.include_router(users_router)
+app.include_router(predict_router)
