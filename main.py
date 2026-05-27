@@ -101,3 +101,7 @@ def environment_info():
         "app_version": APP_VERSION,
         "instance_id": INSTANCE_ID,
     }
+
+from users import router as users_router
+
+app.include_router(users_router)
